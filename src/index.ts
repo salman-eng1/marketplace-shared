@@ -70,7 +70,7 @@ export {
   ISellerDocument,
 } from './seller.interface';
 export { IEmailLocals } from './email.interface';
-export { uploads, videoUpload } from '../cloudinary-upload';
+export { uploads, videoUpload } from './cloudinary-upload';
 export {
   IErrorResponse,
   IError,
@@ -81,13 +81,13 @@ export {
   FileTooLargeError,
   ServerError,
   ErrnoException
-} from '../error-handler';
-export { verifyGatewayRequest } from '../gateway-middleware';
-export { winstonLogger } from '../logger';
+} from './error-handler';
+export { verifyGatewayRequest } from './gateway-middleware';
+export { winstonLogger } from './logger';
 export {
   firstLetterUppercase,
   lowerCase,
   toUpperCase,
   isEmail,
   isDataURL
-} from '../helpers';
+} from './helpers';
