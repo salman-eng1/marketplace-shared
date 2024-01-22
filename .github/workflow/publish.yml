@@ -21,6 +21,6 @@ jobs:
           echo @salman-eng1:registery=https://npm.pkg.github.com/ > build/,npmrc
           echo '//npm.pkg.github.com/salman-eng1/:_auth_Token=${NPM_TOKEN}' >> build/.npmrc
       - run: npm publish
-        workind-directory: ./build
+        working-directory: ./build
         env:
           NPM_TOKEN: ${{secrets.GITHUB_TOKEN}}
